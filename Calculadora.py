@@ -8,7 +8,7 @@ def defNumbers():
             if n1:
                 break
         except (ValueError, TypeError):
-            print(f'Erro, Por favor, digite um número válido  ')
+            print(f'ERRO, Por favor, digite um número válido  ')
     while True:
         try:
             n2 = float(input('Digite o segundo número  '
