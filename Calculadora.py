@@ -28,21 +28,24 @@ def sum():
     print(f'o resultado é {resultado:.0f}')
 
 
-def subtract(n1, n2):
+def subtract():
     num = defNumbers()
     resultado = num[0] - num[1]
     print(f'o resultado é {resultado:.0f}')
 
 
-def multiply(n1, n2):
+def multiply():
     num = defNumbers()
     resultado = num[0] * num[1]
     print(f'o resultado é {resultado:.0f}')
 
 
-def divide(n1, n2):
-    num = defNumbers()
-    resultado = num[0] / num[1]
+def divide():
+    try:
+        num = defNumbers()
+        resultado = num[0] / num[1]
+    except ZeroDivisionError:
+        print('Não é possível dividir por zero')
     print(f'o resultado é {resultado:.0f}')
 
 
